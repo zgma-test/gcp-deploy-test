@@ -1,33 +1,25 @@
 {
   "EDITOR_STATE": {
     "allProjectFiles": {
-      "fb09f07b-2d20-4cfa-a6ef-db2b8cefc0a6": {
-        "id": "fb09f07b-2d20-4cfa-a6ef-db2b8cefc0a6",
+      "7a38ea28-7bf6-494e-9db7-36fd48984bb4": {
+        "id": "7a38ea28-7bf6-494e-9db7-36fd48984bb4",
         "parent": null,
-        "name": "gcp-deploy-test",
-        "type": "DIRECTORY",
-        "isDirectory": true,
-        "children": [
-          "047c045f-f041-4362-aa7d-8dc3c9248f93"
-        ],
-        "isRemovable": false,
-        "filePath": "gcp-deploy-test"
-      },
-      "047c045f-f041-4362-aa7d-8dc3c9248f93": {
-        "id": "047c045f-f041-4362-aa7d-8dc3c9248f93",
-        "parent": "fb09f07b-2d20-4cfa-a6ef-db2b8cefc0a6",
-        "name": "function.js",
+        "name": "gcp-deploy-test.js",
         "type": "JS_LAMBDA",
         "isDirectory": false,
         "children": [],
         "isRemovable": true,
-        "filePath": "gcp-deploy-test/function.js",
-        "code": "exports.handler = function(request, response) {\n    \n    response.send({\"message\": \"Successfully executed\"});\n}",
+        "filePath": "gcp-deploy-test.js",
+        "cursor": {
+          "lineNumber": 2,
+          "column": 5
+        },
         "config": {
           "runtime": "nodejs8",
           "timeout": 60,
           "memory": 128,
-          "triggerType": 0
+          "triggerType": 0,
+          "name": "gcpDeployTest"
         },
         "triggers": [
           {
@@ -36,35 +28,31 @@
           }
         ]
       },
-      "aec22f0e-5c04-48de-9b82-725d2107b938": {
-        "id": "aec22f0e-5c04-48de-9b82-725d2107b938",
+      "54288d9d-22d6-40ac-81e5-5deef3e4f851": {
+        "id": "54288d9d-22d6-40ac-81e5-5deef3e4f851",
         "parent": null,
         "name": "index.js",
         "type": "JS_FILE",
         "isDirectory": false,
         "children": [],
         "isRemovable": false,
-        "filePath": "index.js",
-        "code": "// This file is used to register all your cloud functions in GCP.\n// DO NOT EDIT/DELETE THIS, UNLESS YOU KNOW WHAT YOU ARE DOING.\n\nexports.gcpDeployTestfunction = require(\"./gcp-deploy-test/function.js\").handler;"
+        "filePath": "index.js"
       },
-      "4157a9b9-0ade-4e2e-a45e-24ae04cee5e3": {
-        "id": "4157a9b9-0ade-4e2e-a45e-24ae04cee5e3",
+      "4800e8bf-04c4-4a19-849b-b25f1e99cba6": {
+        "id": "4800e8bf-04c4-4a19-849b-b25f1e99cba6",
         "parent": null,
         "name": "main.py",
         "type": "PYTHON_FILE",
         "isDirectory": false,
         "children": [],
         "isRemovable": false,
-        "filePath": "main.py",
-        "code": "# This file is used to register all your cloud functions in GCP.\n# DO NOT EDIT/DELETE THIS, UNLESS YOU KNOW WHAT YOU ARE DOING.\n\n"
+        "filePath": "main.py"
       }
     },
-    "deletedFiles": [],
-    "rootNode": "fb09f07b-2d20-4cfa-a6ef-db2b8cefc0a6",
     "openFiles": [
-      "047c045f-f041-4362-aa7d-8dc3c9248f93"
+      "7a38ea28-7bf6-494e-9db7-36fd48984bb4"
     ],
-    "currentFileId": "047c045f-f041-4362-aa7d-8dc3c9248f93",
+    "currentFileId": "7a38ea28-7bf6-494e-9db7-36fd48984bb4",
     "resources": {
       "http-trigger": {
         "name": "http-trigger",
@@ -73,6 +61,8 @@
       }
     },
     "customTemplate": {
+      "syntax": "JSON",
+      "overrideDefault": false,
       "dialect": null,
       "definitions": null
     },
@@ -82,13 +72,15 @@
     }
   },
   "PROJECT_META": {
+    "sigmaVersion": "1.4.1",
     "projectName": "gcp-deploy-test",
     "projectDescription": "",
     "projectVersion": "1.0.0",
     "projectRegion": "us-east1",
     "platform": "GCP",
+    "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1566453511699
+    "lastSave": 1593670873765
   },
   "VCS_STATE": {
     "provider": "GitHub",

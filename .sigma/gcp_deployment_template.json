@@ -1,0 +1,24 @@
+{
+  "resources": [
+    {
+      "name": "gcpDeployTest",
+      "type": "gcp-types/cloudfunctions-v1:projects.locations.functions",
+      "properties": {
+        "parent": "projects/sigmagcptest/locations/us-east1",
+        "function": "gcpDeployTest",
+        "sourceArchiveUrl": "gs://<no-builds-yet>/<no-builds-yet>",
+        "entryPoint": "gcpDeployTest",
+        "timeout": "60s",
+        "availableMemoryMb": 128,
+        "runtime": "nodejs8",
+        "httpsTrigger": {}
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "name": "HTTP(S) endpoint for gcpDeployTest",
+      "value": "$(ref.gcpDeployTest.httpsTrigger.url)"
+    }
+  ]
+}
